@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/btn_beranda"
+        android:icon="@drawable/bottom_nav_beranda_active"
+        android:visible="true"
+        android:title="" />
+    <item
+        android:id="@+id/btn_aktivitas"
+        android:icon="@drawable/bottom_nav_aktivitas"
+        android:visible="true"
+        android:title="" />
+    <item
+        android:id="@+id/btn_favorit"
+        android:icon="@drawable/bottom_nav_favorite"
+        android:visible="true"
+        android:title="" />
+    <item
+        android:id="@+id/btn_akun"
+        android:icon="@drawable/bottom_nav_akun"
+        android:visible="true"
+        android:title="" />
+</menu>
