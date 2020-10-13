@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AktivitasFragment">
+    tools:context=".PendanaanFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
@@ -16,16 +16,20 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/aktivitas_saya_header"
+                android:src="@drawable/pendanaan_header_list"
+                android:adjustViewBounds="true"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:src="@drawable/btn_mulai_pendanaan"
                 android:adjustViewBounds="true"
-                android:padding="20dp"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/aktivitas_saya_list"
-                android:adjustViewBounds="true"
-                android:layout_marginBottom="30dp"/>
+                android:layout_gravity="right"
+                android:scaleType="fitCenter"
+                android:background="#0fff"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"/>
         </LinearLayout>
+
     </ScrollView>
 
 </FrameLayout>

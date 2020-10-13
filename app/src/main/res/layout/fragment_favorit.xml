@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AktivitasFragment">
+    tools:context=".FavoritFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
@@ -15,14 +15,15 @@
             android:orientation="vertical">
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/aktivitas_saya_header"
-                android:adjustViewBounds="true"
-                android:padding="20dp"/>
+                android:layout_height="120dp"
+                android:scaleType="fitStart"
+                android:padding="20dp"
+                android:src="@drawable/favorit_header"
+                android:adjustViewBounds="true"/>
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/aktivitas_saya_list"
+                android:src="@drawable/favorit_list"
                 android:adjustViewBounds="true"
                 android:layout_marginBottom="30dp"/>
         </LinearLayout>

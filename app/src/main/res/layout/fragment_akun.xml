@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AktivitasFragment">
+    android:background="#C8C8C8"
+    tools:context=".AkunFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
@@ -16,15 +17,26 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/aktivitas_saya_header"
-                android:adjustViewBounds="true"
-                android:padding="20dp"/>
-            <ImageView
+                android:src="@drawable/akun_saya_header"
+                android:adjustViewBounds="true"/>
+            <ImageButton
+                android:id="@+id/btn_voucher"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/aktivitas_saya_list"
+                android:src="@drawable/akun_list1"
                 android:adjustViewBounds="true"
-                android:layout_marginBottom="30dp"/>
+                android:scaleType="fitCenter"
+                android:background="#0fff"
+                android:padding="20dp"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/akun_list2"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="#0fff"
+                android:padding="20dp"
+                android:layout_marginTop="-20dp"/>
         </LinearLayout>
     </ScrollView>
 
