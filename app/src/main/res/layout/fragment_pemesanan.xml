@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PemesananFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pemesanan_list"
+                android:adjustViewBounds="true"
+                android:padding="16dp"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="0.6"
+                android:src="@drawable/btn_bayar"
+                android:adjustViewBounds="true"
+                android:layout_gravity="right"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:scaleY="1.8"
+                android:scaleX="1.8"
+                android:layout_marginRight="30dp"
+                android:background="#00ffffff"
+                android:layout_marginBottom="30dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

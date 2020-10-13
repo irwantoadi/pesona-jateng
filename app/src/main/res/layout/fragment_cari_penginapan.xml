@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CariPenginapanFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/penginapan_header"
+                android:adjustViewBounds="true"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="-30dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:src="@drawable/btn_cari_transportasi_unselected"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:background="#00FFFFFF"
+                    android:layout_marginRight="20dp"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:src="@drawable/btn_cari_penginapan_selected"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:background="#00FFFFFF"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/form_cari_penginapan"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_weight="0.3"
+                android:src="@drawable/btn_cari"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="#00FFFFFF"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
