@@ -59,6 +59,13 @@ public class AkunFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_akun, container, false);
+//        return inflater.inflate(R.layout.fragment_akun, container, false);
+
+        View view = getLayoutInflater().inflate(R.layout.fragment_pemesanan,
+                container, false);
+
+
+
+        return view;
     }
 }

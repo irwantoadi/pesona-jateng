@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 
 /**
@@ -59,6 +60,34 @@ public class CariTransportasiFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cari_transportasi, container, false);
+//        return inflater.inflate(R.layout.fragment_cari_transportasi, container, false);
+
+        View view = getLayoutInflater().inflate(R.layout.fragment_pemesanan,
+                container, false);
+
+
+        ImageButton btn_cari, btn_cari_penginapan;
+        btn_cari = view.findViewById(R.id.btn_cari);
+        btn_cari_penginapan = view.findViewById(R.id.btn_cari_penginapan);
+        btn_cari.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ListTransportasiFragment fragment = new ListTransportasiFragment();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(((ViewGroup)getView().getParent()).getId(), fragment, "findThisFragment")
+                        .addToBackStack(null).commit();
+            }
+        });
+        btn_cari_penginapan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CariPenginapanFragment fragment = new CariPenginapanFragment();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(((ViewGroup)getView().getParent()).getId(), fragment, "findThisFragment")
+                        .commit();
+            }
+        });
+
+        return view;
     }
 }
