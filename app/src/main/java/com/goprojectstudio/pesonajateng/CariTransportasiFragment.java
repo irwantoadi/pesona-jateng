@@ -62,7 +62,7 @@ public class CariTransportasiFragment extends Fragment {
         // Inflate the layout for this fragment
 //        return inflater.inflate(R.layout.fragment_cari_transportasi, container, false);
 
-        View view = getLayoutInflater().inflate(R.layout.fragment_pemesanan,
+        View view = getLayoutInflater().inflate(R.layout.fragment_cari_transportasi,
                 container, false);
 
 
@@ -84,7 +84,7 @@ public class CariTransportasiFragment extends Fragment {
                 CariPenginapanFragment fragment = new CariPenginapanFragment();
                 getActivity().getSupportFragmentManager().beginTransaction()
                         .replace(((ViewGroup)getView().getParent()).getId(), fragment, "findThisFragment")
-                        .commit();
+                        .addToBackStack(null).commit();
             }
         });
 

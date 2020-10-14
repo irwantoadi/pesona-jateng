@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 
 /**
@@ -61,10 +62,20 @@ public class AkunFragment extends Fragment {
         // Inflate the layout for this fragment
 //        return inflater.inflate(R.layout.fragment_akun, container, false);
 
-        View view = getLayoutInflater().inflate(R.layout.fragment_pemesanan,
+        View view = getLayoutInflater().inflate(R.layout.fragment_akun,
                 container, false);
 
-
+        ImageButton btn_voucher;
+        btn_voucher = view.findViewById(R.id.btn_voucher);
+        btn_voucher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                VoucherFragment fragment = new VoucherFragment();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(((ViewGroup)getView().getParent()).getId(), fragment, "findThisFragment")
+                        .addToBackStack(null).commit();
+            }
+        });
 
         return view;
     }

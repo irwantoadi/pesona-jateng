@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //confirm exit
+                myAlert(LoginActivity.this);
             }
         });
         btn_signup.setOnClickListener(new View.OnClickListener() {
