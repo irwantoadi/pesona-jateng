@@ -29,7 +29,8 @@
         android:layout_marginStart="-46dp"
         android:adjustViewBounds="true"
         android:scaleType="fitEnd"
-        android:src="@drawable/floating_btn_pelatihan" />
+        android:src="@drawable/floating_btn_pelatihan"
+        android:layout_marginLeft="-46dp" />
 
     </LinearLayout>
 </FrameLayout>

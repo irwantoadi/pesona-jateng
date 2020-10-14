@@ -6,26 +6,32 @@
     tools:context=".AktivitasFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <ImageView
+            android:src="@drawable/aktivitas_saya_header"
+            android:adjustViewBounds="true"
+            android:padding="20dp"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/aktivitas_saya_header"
-                android:adjustViewBounds="true"
-                android:padding="20dp"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/aktivitas_saya_list"
-                android:adjustViewBounds="true"
-                android:layout_marginBottom="30dp"/>
-        </LinearLayout>
-    </ScrollView>
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aktivitas_saya_list"
+                    android:adjustViewBounds="true"
+                    android:layout_marginBottom="30dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 
 </FrameLayout>

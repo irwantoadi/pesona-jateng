@@ -2,6 +2,9 @@ package com.goprojectstudio.pesonajateng;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -42,5 +45,24 @@ public class LoginActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        myAlert(LoginActivity.this);
+    }
+    private void myAlert(Context context) {
+        new AlertDialog.Builder(context)
+                .setTitle("Keluar?")
+                .setMessage("Apakah yakin akan keluar aplikasi?")
+                .setPositiveButton("Ya", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                        System.exit(0);
+                    }
+                })
+                .setNegativeButton("Tidak", null)
+                .show();
     }
 }

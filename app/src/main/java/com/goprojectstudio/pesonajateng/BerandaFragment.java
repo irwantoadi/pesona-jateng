@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 
 /**
@@ -59,6 +60,96 @@ public class BerandaFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_beranda, container, false);
+//        return inflater.inflate(R.layout.fragment_beranda, container, false);
+
+        View view = getLayoutInflater().inflate(R.layout.fragment_beranda,
+                container, false);
+
+        ImageButton icon_destinasi, icon_desa, icon_oleh, icon_penginapan,
+                icon_pelatihan, icon_pemesanan, icon_edukasi, icon_pendanaan;
+
+        icon_destinasi = view.findViewById(R.id.icon_destinasi);
+        icon_desa = view.findViewById(R.id.icon_desa);
+        icon_oleh = view.findViewById(R.id.icon_oleh_oleh);
+        icon_penginapan = view.findViewById(R.id.icon_penginapan);
+        icon_pelatihan = view.findViewById(R.id.icon_pelatihan);
+        icon_pemesanan = view.findViewById(R.id.icon_pemesanan);
+        icon_edukasi = view.findViewById(R.id.icon_edukasi);
+        icon_pendanaan = view.findViewById(R.id.icon_pendanaan);
+        icon_destinasi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DestinasiFragment destinasiFragment = new DestinasiFragment();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(((ViewGroup)getView().getParent()).getId(), destinasiFragment, "findThisFragment")
+                        .addToBackStack(null).commit();
+            }
+        });
+        icon_desa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DesaFragment desaFragment = new DesaFragment();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(((ViewGroup)getView().getParent()).getId(), desaFragment, "findThisFragment")
+                        .addToBackStack(null).commit();
+            }
+        });
+        icon_oleh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                OlehOlehFragment olehOlehFragment = new OlehOlehFragment();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(((ViewGroup)getView().getParent()).getId(), olehOlehFragment, "findThisFragment")
+                        .addToBackStack(null).commit();
+            }
+        });
+        icon_penginapan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CariPenginapanFragment fragment = new CariPenginapanFragment();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(((ViewGroup)getView().getParent()).getId(), fragment, "findThisFragment")
+                        .addToBackStack(null).commit();
+            }
+        });
+        icon_pelatihan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PelatihanFragment fragment = new PelatihanFragment();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(((ViewGroup)getView().getParent()).getId(), fragment, "findThisFragment")
+                        .addToBackStack(null).commit();
+            }
+        });
+        icon_pemesanan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PemesananFragment fragment = new PemesananFragment();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(((ViewGroup)getView().getParent()).getId(), fragment, "findThisFragment")
+                        .addToBackStack(null).commit();
+            }
+        });
+        icon_edukasi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EdukasiFragment fragment = new EdukasiFragment();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(((ViewGroup)getView().getParent()).getId(), fragment, "findThisFragment")
+                        .addToBackStack(null).commit();
+            }
+        });
+        icon_pendanaan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PendanaanFragment fragment = new PendanaanFragment();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(((ViewGroup)getView().getParent()).getId(), fragment, "findThisFragment")
+                        .addToBackStack(null).commit();
+            }
+        });
+
+        // after you've done all your manipulation, return your layout to be shown
+        return view;
     }
 }

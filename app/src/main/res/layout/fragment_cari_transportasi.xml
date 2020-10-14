@@ -35,6 +35,7 @@
                     android:background="#00FFFFFF"
                     android:layout_marginRight="20dp"/>
                 <ImageButton
+                    android:id="@+id/btn_cari_penginapan"
                     android:layout_width="wrap_content"
                     android:layout_height="90dp"
                     android:src="@drawable/btn_cari_penginapan_unselected"

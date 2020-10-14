@@ -73,6 +73,7 @@
             android:padding="16dp"
             android:inputType="textPassword"
             android:layout_marginBottom="20dp"
+            android:layout_marginTop="-10dp"
             android:autofillHints="" />
         <Button
             android:id="@+id/btn_login"

@@ -68,6 +68,7 @@
             android:padding="16dp"
             android:inputType="textEmailAddress"
             android:layout_marginBottom="20dp"
+            android:layout_marginTop="-10dp"
             android:autofillHints="" />
         <EditText
             android:layout_width="match_parent"
@@ -77,6 +78,7 @@
             android:padding="16dp"
             android:inputType="textPassword"
             android:layout_marginBottom="20dp"
+            android:layout_marginTop="-10dp"
             android:autofillHints="" />
         <Button
             android:id="@+id/btn_signup"

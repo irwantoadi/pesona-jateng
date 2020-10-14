@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 
 /**
@@ -59,6 +60,22 @@ public class PendanaanFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pendanaan, container, false);
+//        return inflater.inflate(R.layout.fragment_pendanaan, container, false);
+
+        View view = getLayoutInflater().inflate(R.layout.fragment_pendanaan,
+                container, false);
+
+        ImageButton btn_pendanaan;
+        btn_pendanaan = view.findViewById(R.id.btn_pendanaan);
+        btn_pendanaan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MulaiMendanaiFragment fragment = new MulaiMendanaiFragment();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(((ViewGroup)getView().getParent()).getId(), fragment, "findThisFragment")
+                        .addToBackStack(null).commit();
+            }
+        });
+        return view;
     }
 }
