@@ -21,7 +21,7 @@ public class BerandaActivity extends AppCompatActivity implements BottomNavigati
         setContentView(R.layout.activity_beranda);
 
         bottomNavigationView = findViewById(R.id.buttom_nav);
-        bottomNavigationView.setItemIconTintList(null);
+//        bottomNavigationView.setItemIconTintList(null);
         bottomNavigationView.setSelectedItemId(R.id.btn_beranda);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
 

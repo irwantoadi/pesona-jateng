@@ -3,20 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#818181"
+    android:background="@color/abu"
     tools:context=".ListTransportasiFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#818181">
+        android:background="@color/abu">
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/list_hasil_transport"
             android:adjustViewBounds="true"
-            android:background="#818181"
+            android:background="@color/abu"
             android:layout_marginBottom="50dp"/>
     </ScrollView>
 
