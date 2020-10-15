@@ -21,7 +21,7 @@
             <ImageButton
                 android:id="@+id/btn_pendanaan"
                 android:layout_width="wrap_content"
-                android:layout_height="46dp"
+                android:layout_height="40dp"
                 android:src="@drawable/btn_mulai_pendanaan"
                 android:adjustViewBounds="true"
                 android:layout_gravity="right"

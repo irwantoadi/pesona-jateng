@@ -71,6 +71,7 @@ public class MulaiMendanaiFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "Berhasil!", Toast.LENGTH_SHORT).show();
+                getActivity().getFragmentManager().popBackStack();
             }
         });
         return view;

@@ -20,6 +20,8 @@
             <SearchView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:queryHint="Cari destinasi atau aktifitas"
+                android:iconifiedByDefault="false"
                 android:background="#C6D34D"/>
             <ImageView
                 android:layout_width="match_parent"

@@ -21,12 +21,19 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:src="@drawable/form_mendanai"
+                android:adjustViewBounds="true"
+                android:layout_margin="20dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:src="@drawable/dengan_ini_saya"
+                android:layout_margin="20dp"
                 android:adjustViewBounds="true"/>
             <ImageButton
                 android:id="@+id/btn_danai"
                 android:layout_width="wrap_content"
-                android:layout_height="56dp"
+                android:layout_height="40dp"
                 android:src="@drawable/btn_danai"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
