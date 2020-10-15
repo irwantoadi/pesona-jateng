@@ -5,4 +5,11 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desa_wisata_jawa_tengah">Desa Wisata Jawa Tengah</string>
+    <string name="pusat_oleh_oleh">Pusat Oleh-oleh</string>
+    <string name="penginapan_transportasi"><![CDATA[Penginapan & Transportasi]]></string>
+    <string name="pelatihan">Pelatihan</string>
+    <string name="pemesanan">Pemesanan</string>
+    <string name="edukasi">Edukasi</string>
+    <string name="pendanaan">Pendanaan</string>
 </resources>

@@ -6,6 +6,35 @@
     android:background="@color/abu"
     tools:context=".ListPenginapanFragment">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="7dp"
+            android:background="@drawable/ic_arrow_back_black_24dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/penginapan_transportasi"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_more_vert_black_24dp"
+            android:layout_marginLeft="-40dp"/>
+    </LinearLayout>
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"
@@ -19,5 +48,12 @@
             android:background="@color/abu"
             android:layout_marginBottom="50dp"/>
     </ScrollView>
-
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/floating_btn_penginapan"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="-140dp"
+            android:layout_gravity="right"/>
+    </LinearLayout>
 </FrameLayout>

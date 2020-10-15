@@ -63,7 +63,13 @@ public class BerandaActivity extends AppCompatActivity implements BottomNavigati
 
     @Override
     public void onBackPressed() {
-        myAlert(BerandaActivity.this);
+        int count = getSupportFragmentManager().getBackStackEntryCount();
+        if (count == 0){
+            myAlert(BerandaActivity.this);
+        }else{
+            getSupportFragmentManager().popBackStack();
+        }
+
     }
     private void myAlert(Context context) {
         new AlertDialog.Builder(context)

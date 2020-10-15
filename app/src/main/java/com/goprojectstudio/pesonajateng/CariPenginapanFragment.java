@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 
@@ -83,7 +84,16 @@ public class CariPenginapanFragment extends Fragment {
                 CariTransportasiFragment fragment = new CariTransportasiFragment();
                 getActivity().getSupportFragmentManager().beginTransaction()
                         .replace(((ViewGroup)getView().getParent()).getId(), fragment, "findThisFragment")
-                        .addToBackStack(null).commit();
+                        .commit();
+            }
+        });
+
+        Button btn_back;
+        btn_back = view.findViewById(R.id.btn_back);
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().getSupportFragmentManager().popBackStack();
             }
         });
 

@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 
 /**
@@ -59,6 +60,20 @@ public class ListTransportasiFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_list_transportasi, container, false);
+//        return inflater.inflate(R.layout.fragment_list_transportasi, container, false);
+
+        View view = getLayoutInflater().inflate(R.layout.fragment_list_transportasi,
+                container, false);
+
+        Button btn_back;
+        btn_back = view.findViewById(R.id.btn_back);
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().getSupportFragmentManager().popBackStack();
+            }
+        });
+
+        return view;
     }
 }
